@@ -15,14 +15,20 @@
 @media only screen and (max-width: 320px) {
   .container {
     padding: 10px;
+    position: relative; /* Adicionado */
   }
   
   h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
   
   p {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  
+  .heart {
+    top: -40px; /* Alterado */
+    left: calc(100% - 100px); /* Adicionado */
   }
 }
 
@@ -80,3 +86,4 @@ h1 {
 p {
   margin-bottom: 10px;
 }
+
