@@ -15,7 +15,7 @@
 @media only screen and (max-width: 320px) {
   .container {
     padding: 10px;
-    position: relative; /* Adicionado */
+    position: relative;
   }
   
   h1 {
@@ -27,17 +27,18 @@
   }
   
   .heart {
-    top: -40px; /* Alterado */
-    left: calc(100% - 100px); /* Adicionado */
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: pulse 1s ease-in-out infinite;
   }
 }
 
 .heart {
   width: 100px;
   height: 100px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  display: inline-block;
   animation: pulse 1s ease-in-out infinite;
 }
 
@@ -67,10 +68,11 @@
 body {
   background-color: #f108ac;
   font-family: Arial, sans-serif;
+  font-size: 10px;
 }
 
 .container {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
@@ -84,6 +86,6 @@ h1 {
 }
 
 p {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
